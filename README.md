@@ -68,10 +68,11 @@ python manage.py addcsv
 ## Шаблон наполнения env-файла, который находится в папке infra
 
 ```commandline
+SECRET_KEY=your_secret_code # Секретный ключ установки Django
 DB_ENGINE=django.db.backends.postgresql # указываем, что работаем с postgresql  
 DB_NAME=postgres # имя базы данных  
 POSTGRES_USER=postgres # логин для подключения к базе данных  
-POSTGRES_PASSWORD=     # пароль для подключения к БД (установите свой)  
+POSTGRES_PASSWORD=your_password # пароль для подключения к БД (установите свой)  
 DB_HOST=db # название сервиса (контейнера)  
 DB_PORT=5432 # порт для подключения к БД  
 ```
